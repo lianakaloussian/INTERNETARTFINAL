@@ -10,23 +10,40 @@
   </head>
   <body>
 
-<form>
-    <p> What is your name? </p>
-<input type="text"id="userInput" />
-<input type="submit" onclick="othername();" />
-<button id="myButton" class="float-left submit-button" >Next Questions!</button>
+<form action="action_page.php">
 
+<label for="fname"> First Name</label>
+<input type="text"id="fName" name="firstname" placeholder=" Your name..." />
+
+<br><label for="lname"> Last Name </label>
+<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+<br><label for="birthdate"> Birthdate </label>
+<input type="text" id= "birthdate" name= "birthday" placeholder="Your birthdate"/>
+
+<br><label for="studentID"> Student ID </label>
+<input type="text" id="studentID" name="studentNumber" placeholder="Your Student Number"/>
+
+<br> <label for="Mothermaiden"> Mother's Maiden Name </label>
+<input type="text" id="Mothermaiden" name="MotherMaidenName" placeholder= " Your Mother's Maiden Name"/>
+
+<br> <label for="fatherbithcity"> Father's Birth City </label>
+<input type="text" id="fatherbithcity" name="FatherBirthPlace" placeholder="Your Father's Birthplace"/>
+
+<br> <label for="starsign"> Your Star Sign</label>
+<input type="text" id="starsign" name="Zodiac" placeholder="Your Star Sign"/>
+
+
+<input type="next" class="button" name="next" value="next"/>
+
+<button id="myButton" class="float-left submit-button" >Next</button>
 </form>
 
   <script type="text/javascript">
-  function othername() {
-      var input_name = document.getElementById("userInput").value;
-      var button+next= document.getElementById("myButton").onclick = function () {
-        location.href = "www.yoursite.com";
-    };
 
-  }
-
+  document.getElementById("myButton").onclick = function () {
+         location.href = " https://lianakaloussian.github.io/INTERNETARTFINAL/next";
+     };
 
 
   </script>
